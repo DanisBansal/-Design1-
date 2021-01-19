@@ -1,7 +1,7 @@
 # -Design1-
-![text](https://github.com/DanisBansal/-Design1-/blob/main/preview/Img1.png?raw=true)
-![text](https://github.com/DanisBansal/-Design1-/blob/main/preview/Img2.png?raw=true)
-![text](https://github.com/DanisBansal/-Design1-/blob/main/preview/Img3.png?raw=true)
+![text](https://github.com/DanisBansal/-Design1-/blob/main/preview/Img1.PNG?raw=true)
+![text](https://github.com/DanisBansal/-Design1-/blob/main/preview/Img2.PNG?raw=true)
+![text](https://github.com/DanisBansal/-Design1-/blob/main/preview/Img3.PNG?raw=true)
 
 Danis Bansal
 </br>
