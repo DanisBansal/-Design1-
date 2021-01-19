@@ -1,7 +1,7 @@
 # -Design1-
-![text](preview/Img1.png)
-![text](preview/Img2.png)
-![text](preview/Img3.png)
+![text]{{site.baseurl}}/preview/Img1.png)
+![text]{{site.baseurl}}/preview/Img2.png)
+![text]{{site.baseurl}}/preview/Img3.png)
 
 Danis Bansal
-</br>danisbansal0408@gmail.com
+</brdanisbansal0408@gmail.com
