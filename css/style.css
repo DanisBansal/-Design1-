@@ -1,0 +1,768 @@
+/* Template: Web-Site
+   Author: Danis Bansal
+   Description: Master CSS file
+*/
+
+/******************************
+****** 01. General Styles *****
+*******************************/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/**************************************************
+********* STYLING OF NAVBAR OF THE WEBSITE ********
+***************************************************/
+
+nav {
+    /* margin-left: 10px; */
+    max-width: 100%;
+    background-color: rgba(05, 00, 09, 0.4);
+}
+
+nav .container-fluid{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.custom_logo{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* line-height: 2; */
+    font-size: 26px;
+}
+
+.navbar-dark .navbar-brand{
+    transition: 0.5s all;
+}
+
+.navbar-dark .navbar-brand:hover{
+    color: #626567 !important; /* this will highlight the Website Name while hovering it */
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    transition: 0.5s all;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #626567 !important; /* this will highlight the menu items while hovering it */
+}
+
+/**************************************************
+******* STYLING OF HOME PAGE OF THE WEBSITE *******
+***************************************************/
+
+.container-fluid{
+    padding: 0 !important;
+}
+
+.main{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.cover-bg{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4{
+    font-family: 'lato', sans-serif;
+}
+
+.banner{
+    background-image: url(../media/images/img1.jpg); /* this will add a background image to our HOME section */
+    background-attachment: fixed;
+    height: 100vh;                                  /* this will adjust the height of the backgroung img with respect to the device height */
+    width: 100%;
+}
+
+.banner .caption span{
+    color: #01d7a7;
+}
+
+.banner .caption h1{
+    color: #fff;
+}
+
+.banner .caption p{
+    color: #fff;
+}
+
+.flex-container{
+    padding-top: 80px;
+    clear: both;
+    /* flex-direction: left; */
+}
+
+.main .flex-container .flex-items{
+    /* max-width: 20%; */
+    display: inline-block;
+    text-align: center;
+    float: left;
+    /* margin-left: 46px; */
+}
+
+.main .flex-container .flex-items h5{
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    margin: 20px 0px;
+}
+
+.main .flex-container .flex-items p{
+    color: #727272;
+    font-size: 18px;
+}
+
+.main .flex-container .flex-items .text-blue{
+    font-size: 34px;
+    color: #3278fa !important;
+}
+
+.flex-items2{
+    /* max-width: 33.06%; */
+    /* height: auto; */
+    float: left;
+    padding: 10px 15px;
+    /* padding-top: 20px; */
+
+}
+
+.flex-items2 h6{
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #3278fa;
+}
+
+.flex-items2 h3{
+    letter-spacing: 0.5px;
+    line-height: 35px;
+    font-size: 27px;
+    margin-bottom: 20px;
+    color: #272727;
+}
+
+.flex-items2 .read{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    border: 1px solid #272727;
+    background-color: #272727;
+    padding: 10px 25px;
+    transition: 0.3s all;
+    border-radius: 20px;
+}
+
+.flex-items2 p{
+    padding-bottom: 40px;
+    color: rgb(114, 114, 114);
+    margin: 0 0 10px;
+    font-size: 14px;
+    line-height: 23px;
+    
+}
+
+@media (min-width: 768px){  /* here i added additional css to boostrap css to arragne my divs accordingly */
+    .flex-items2.col-md-4 {
+    flex: 0 0 auto;
+    width: 30%;
+    margin: 1%;
+}}
+
+.flex-items2.b-c{
+    /* width: 30%; */
+    background-color: #f3f3f3;
+    padding: 0;
+    margin-top: 3%;
+}
+
+.flex-items2 .zoom img{
+    width: 100%;
+    height: 200px !important;
+}
+
+.title-line{
+    /* max-width: 30px; */
+    border-bottom: 3px solid #3278fa;
+    text-align: center;
+}
+
+.margin-top{
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.para{
+    /* max-width:83.333%; */
+    /* padding-right: 20px; */
+    /* padding-left: 20px; */
+    float:right;
+    margin-top: 8px;
+}
+
+.para h4{
+    font-weight: 600;
+}
+
+.para-e h4{
+    text-align: center;
+}
+
+.margin-top-1{
+    float:left;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+/**************************************************
+**** STYLING OF ABOUT US SECTION OF THE WEBSITE ***
+***************************************************/
+
+.who-we-are{
+    max-width: 100%;
+    padding: 72px 0px 72px 0px;
+    background-image: url(../media/images/img6.jpg);
+    background-size: cover;
+    clear: both;
+    float: left;
+}
+
+.who-we-are .heading h2{
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #fff;
+}
+
+.who-we-are .heading p{
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+}
+
+.section-margin{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.who-we-are .col-1{
+    /* width: 30%; */
+    float: left;
+    padding: 10px 15px;
+    /* margin-top: 60px; */
+}
+
+.who-we-are .col-1 img{
+    max-width: 100%;
+    display: inline-block;
+    /* margin: 0 auto;
+    height: 175px; */
+}
+
+.who-we-are .col-1 .text-box{
+    padding: 10%;
+    background-color: #f3f3f3;
+    max-width: 100%;
+    text-align: center;
+}
+
+.who-we-are .col-1 .text-box h4{
+    margin-bottom: 9px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.who-we-are .col-1 .text-box p{
+    color: #727272;
+    line-height: 23px;
+    text-align: center;
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+.full-dark{
+    max-width: 100%;
+    padding: 72px 0 72px 0;
+    background-color: #121212;
+    float: left;
+    clear: both;
+}
+
+.full-dark .col-md-1{
+    /* width: 33.333%; */
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 40px;
+}
+
+.full-dark .col-md-1 .icon{
+    float: left;
+    margin: 0px 20px 0px 0px;
+    color: #01d7a7 !important;
+    font-size: 32px;
+}
+
+.full-dark .col-md-1 .text-box-1{
+    padding: 0px 80px 0px 60px;
+    display: block;
+}
+
+.full-dark .col-md-1 .text-box-1 h5{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.full-dark .col-md-1 .text-box-1 p{
+    font-size: 14px;
+    margin: 0px 0px 10px;
+    line-height: 23px;
+    color: #fff;
+    opacity: 0.5;
+}
+
+/**************************************************
+** STYLING OF OUR SERVICES SECTION OF THE WEBSITE *
+***************************************************/
+
+.full-light{
+    max-width: 100%;
+    padding: 72px 0px 72px 0px;
+    float: left;
+    clear: both;
+    display: block;
+    background-color: #f3f3f3;
+}
+
+.full-light .heading{
+    padding-bottom: 40px;
+}
+
+.full-light .heading h2{
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #272727;
+}
+
+.full-light .heading p{
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 25px;
+    color: #727272;
+    font-size: 14px;
+}
+
+.full-light .col-md-g{
+    /* width: 25%; */
+    float: left;
+    padding: 0 15px;
+    margin-top: 3%;
+}
+
+.full-light .col-md-g .inner{
+    padding: 30px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.full-light .col-md-g .inner img{
+    max-width: 33.333%;
+    height: 110px;
+    margin-bottom: 20px;
+    vertical-align: middle;
+}
+
+.full-light .col-md-g .inner h6{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.full-light .col-md-g .inner p{
+    line-height: 23px;
+    color: #727272;
+    margin: 0 0 10px;
+}
+
+/**************************************************
+ STYLING OF STUNNING DESIGN SECTION OF THE WEBSITE 
+***************************************************/
+
+.parallax{
+    max-width: 100%;
+    padding: 100px 0 90px 0;
+    background: url(../media/images/img7.jpg) 50% 0 no-repeat fixed;
+    float: left;
+    clear: both;
+}
+
+.parallax .main .heading h2{
+    font-size: 35px;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.parallax .main .heading p{
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.parallax .main .col-md-1{
+    /* width: 33.333%; */
+    float: left;
+    color: #fff;
+    margin-top: 3%;
+}
+
+.parallax .main .col-md-1 .icon{
+    float: left;
+    margin: 0px 20px 0px 20px;
+    font-size: 32px;
+}
+
+.parallax .main .col-md-1 .text-box-1{
+    padding: 0 0 0 80px;
+    display: block;
+    width: 83.333%;
+}
+
+.parallax .main .col-md-1 .text-box-1 h5{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.parallax .main .col-md-1 .text-box-1 p{
+    font-size: 14px;
+    margin: 0 0 10px;
+    line-height: 23px;
+}
+
+/**************************************************
+**** STYLING OF OUR TEAM SECTION OF THE WEBSITE ***
+***************************************************/
+
+.meet-our-team{
+    width: 100%;
+    padding: 72px 0px 72px 0px;
+    float: left;
+    clear: both;
+    display: block;
+}
+
+.meet-our-team .heading h2{
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #272727;
+}
+
+.meet-our-team .heading p{
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 25px;
+    color: #727272;
+    font-size: 14px;
+}
+
+.meet-our-team .col-md-3{
+    /* width: 25%; */
+    float: left;
+    margin-top: 3%;
+}
+
+.meet-our-team .col-md-3 figure{
+    padding-bottom: 90px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+}
+
+
+.meet-our-team .col-md-3 figure .grid-holder a img{
+    max-width: 100%;
+    display: block;
+    height: 200px;
+    text-align: center;
+}
+
+.meet-our-team .col-md-3 figure .grid-holder .team-content-holder{
+    height: 90px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    /* text-align: center; */
+    overflow: hidden;
+}
+
+.meet-our-team .col-md-3 figure .grid-holder .team-content-holder .personal-info{
+    position: relative;
+    margin-bottom: 15px;
+    float: left;
+    width: 100%;
+}
+
+.meet-our-team .col-md-3 figure .grid-holder .team-content-holder .personal-info h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #01d7a7;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+.meet-our-team .col-md-3 figure .grid-holder .team-content-holder .personal-info span{
+    font-size: 14px;
+    color: #727272;
+}
+
+.meet-our-team .col-md-3 figure .grid-holder .team-content-holder::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #4339bc;
+    left: -1px;
+}
+
+/**************************************************
+****** STYLING OF ADD SECTION OF THE WEBSITE ******
+***************************************************/
+
+.section-dark{
+    width: 100%;
+    padding: 40px 0px 40px 0px;
+    background-color: #272727;
+    display: block;
+    float: left;
+    clear: both;
+}
+
+.section-dark .flex-container{
+    padding-top: 0px;
+}
+
+.section-dark .col-md-9{
+    /* max-width: 75%; */
+    float: left;
+    margin-top: 5%;
+    /* margin-left: 55px; */
+}
+
+.section-dark .col-md-9 h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 35px;
+    letter-spacing: 0.5px;
+}
+
+.section-dark .col-md-3{
+    margin-top: 8%;
+    margin-bottom: 8%;
+    float: left;
+}
+
+.section-dark .col-md-3 a{
+    text-decoration: none;
+    color: #272727;
+    border: 2px solid #fff;
+    background: #fff;
+    border-radius: 25px;
+    padding: 14px 36px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    transition: 0.3s all;
+}
+
+.section-dark .col-md-3 a:hover{
+    color: #fff;
+    background: none;
+    border: 2px solid #fff;
+}
+
+/**************************************************
+**** STYLING OF OUR BLOG SECTION OF THE WEBSITE ***
+***************************************************/
+
+.who-we-are.our-blog{
+    background-color: #f3f3f3;
+    background-image: none;
+}
+
+.who-we-are.our-blog .heading h2{
+    color: #272727;
+}
+
+.who-we-are.our-blog p{
+    color: #727272;
+}
+
+.who-we-are.our-blog .col-1 .text-box{
+    background-color: #fff;
+}
+
+/**************************************************
+******** STYLING FOR FOOTER OF THE WEBSITE ********
+***************************************************/
+
+footer{
+    /* width: 100%; */
+    font-size: 14px;
+    color: #fff;
+    /* float: left; */
+    clear: both;
+    /* padding: 26px 0px; */
+    text-align: center;
+    line-height: 23px;
+    background-color: #272727;
+}
+
+footer .flex-container{
+    padding-top: 55px;
+    padding-bottom: 25px !important;
+}
+
+/**************************************************
+********************* OLD CSS *********************
+***************************************************/
+
+/* .cst-nav{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+.cst-nav ul{
+    float: right;
+}
+.cst-nav ul li{
+    display: inline-bloc;
+    list-style-type: none;
+}
+
+.cst-nav ul li a{
+    text-decoration: none;
+    color: #272727;
+    line-height: 100px;
+    padding: 35px 10px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+} */
+
+/* .logo{
+    float: left;
+    line-height: 100px;
+} */
+/* .slider{
+    max-width: 100%;
+    height: 100vh;
+    background-image: url(../media/images/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.slider .title{
+    max-width: 40%;
+    height: auto;
+    position: absolute;
+    left: 18.5%;
+}
+
+.slider .title h1{
+    font-size: 56px;
+    color: #fff;
+    line-height: 60px;
+}
+
+.slider .title h1 span{
+    color:#01d7a7 !important;
+}
+
+.slider .title p{
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.5;
+    margin-top: 15px;
+    padding-right: 20px;
+}
+
+.slider .title .btn{
+    font-weight: 600;
+    color: #fff;
+    background-color: #01d7a7;
+    border-radius: 3px;
+    padding: 16px 35px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    margin-right: 10px;
+    line-height: 26px;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 15px;
+    transition: 0.3s all;
+}
+
+.slider .title .btn:hover{
+    background-color: #272727;
+} */
